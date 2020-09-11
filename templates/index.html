@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block sub_content %}
+<style>
+  body
+  {
+      background-image:url("../static/mag.jpg") ;
+      background-position:top;
+      background-size:cover;
+  }
+</style>
+<div class="container">
+    <h2>Fake News Detection</h2>
+    
+    <form action="{{url_for('predict')}}" method="POST">
+      <div class="form-group">
+        <label for="comment">Enter News article:</label>
+        <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    {{prediction_text}}
+  </div>
+{% endblock %}
