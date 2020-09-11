@@ -1,2 +1,2 @@
-# ML-project-Sukhada
-A Machine Learning project to classify Fake news and Real news using Natural Language Processing.
+# Fake-News-detection-ML-Project
+A Machine Learning project to build a Fake News detection Model using Natural Language Processing to classify Fake and True news.
